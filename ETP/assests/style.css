@@ -1,0 +1,54 @@
+/* 🌞 Light Mode Theme */
+
+body {
+  background-color: #f7f9fb;
+  color: #222;
+  font-family: "Inter", sans-serif;
+}
+
+[data-testid="stAppViewContainer"] {
+  background-color: #f7f9fb !important;
+  color: #222 !important;
+}
+
+[data-testid="stSidebar"] {
+  background-color: #ffffff !important;
+  border-right: 1px solid #e0e0e0;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #111 !important;
+}
+
+.stMetric {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button[kind="primary"],
+.stButton>button {
+  background-color: #0066ff !important;
+  color: white !important;
+  border: none;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+button[kind="primary"]:hover,
+.stButton>button:hover {
+  background-color: #0052cc !important;
+}
+
+.stDataFrame {
+  background-color: white !important;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+div[data-testid="stMarkdownContainer"] code {
+  background-color: #eaf2ff;
+  color: #0056b3;
+}

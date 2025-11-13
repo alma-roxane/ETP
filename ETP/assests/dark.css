@@ -1,0 +1,123 @@
+/* 🌙 Dark Mode Theme */
+
+body {
+  background-color: #111827;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+[data-testid="stAppViewContainer"] {
+  background-color: #111827 !important;
+  color: #e5e7eb !important;
+}
+
+[data-testid="stSidebar"] {
+  background-color: #1f2937 !important;
+  border-right: 1px solid #374151;
+  color: #ffffff !important;
+}
+
+/* 🔧 Make sidebar radio labels visible in dark mode */
+[data-testid="stSidebar"] .stRadio label p {
+  color: #f3f4f6 !important; /* brighter white text for visibility */
+  font-weight: 500;
+}
+
+/* Optional: highlight the selected radio label slightly more */
+[data-testid="stSidebar"] .stRadio div[role="radiogroup"] label[data-testid="stMarkdownContainer"] p {
+  transition: color 0.2s ease;
+}
+
+[data-testid="stSidebar"] .stRadio div[role="radiogroup"] label[aria-checked="true"] p {
+  color: #ffffff !important; /* fully bright when selected */
+}
+
+/* Headers */
+h1, h2, h3, h4, h5 {
+  color: #f3f4f6 !important;
+}
+
+/* Metric boxes */
+.stMetric {
+  background: #1f2937;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(255,255,255,0.05);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Metric labels and values */
+[data-testid="stMetricLabel"] {
+  color: #f3f4f6 !important;
+  font-weight: 500;
+}
+
+[data-testid="stMetricValue"] {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Buttons */
+button[kind="primary"],
+.stButton>button {
+  background-color: #2563eb !important;
+  color: white !important;
+  border: none;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+button[kind="primary"]:hover,
+.stButton>button:hover {
+  background-color: #1d4ed8 !important;
+}
+
+/* DataFrame tables */
+.stDataFrame {
+  background-color: #1f2937 !important;
+  color: #f3f4f6 !important;
+  border-radius: 8px;
+  border: 1px solid #374151;
+}
+
+/* Inline code blocks */
+div[data-testid="stMarkdownContainer"] code {
+  background-color: #374151;
+  color: #93c5fd;
+}
+
+/* Form labels (e.g. Amount, Category, Date, etc.) */
+label, .stTextInput label, .stSelectbox label, .stNumberInput label, .stDateInput label {
+  color: #e5e7eb !important;
+  font-weight: 500;
+}
+
+/* Placeholders */
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder {
+  color: #9ca3af !important;
+}
+/* 💬 Make chatbot and markdown text clearly visible in dark mode */
+[data-testid="stMarkdownContainer"],
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] span,
+[data-testid="stMarkdownContainer"] strong,
+[data-testid="stMarkdownContainer"] em {
+  color: #f3f4f6 !important;  /* bright, readable text */
+}
+
+/* Optional: make emojis and icons pop slightly */
+[data-testid="stMarkdownContainer"] img {
+  filter: brightness(1.1);
+}
+
+/* Optional: improve contrast for bold or highlighted text */
+[data-testid="stMarkdownContainer"] strong {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Optional: improve chat bubble text (user + bot messages) */
+.stChatMessage p {
+  color: #f3f4f6 !important;
+}
